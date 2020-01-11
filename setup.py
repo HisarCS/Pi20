@@ -39,7 +39,7 @@ setup(
         'RPi.GPIO',
         'wiringpi',
         'numpy',
-        'opencv-contrib-python3'
+        'opencv-contrib-python'
     ]
 
 )
