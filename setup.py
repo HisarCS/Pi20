@@ -38,7 +38,7 @@ setup(
         'pygame',
         'RPi.GPIO',
         'wiringpi',
-        'numpy'
+        'numpy',
         'opencv-contrib-python3'
     ]
 
