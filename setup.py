@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 print("                                                                                 ")
 print("******************************************************************************************")
 print("PiWarsTurkiye2020 kutuphanesine hosgeldiniz!")
-print("Gerekli dokumantosyonu https://github.com/HisarCS/Pi20 adresinden bulabilirsiniz.")
+print("Gerekli dokumantosyonu githubda bulabilirsiniz.")
 print("Herhangi bir sorun cikarsa once yukaridaki dokumantosyona goz atmanizi oneririz. ")
 print("Eger sorun hala devam ederse bize ulasmaktan cekinmeyin.")
 print("Bu kutuphaneyi indirirken de kullanirken de programin sudo ile calistigindan emin olun.")
