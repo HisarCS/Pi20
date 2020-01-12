@@ -276,4 +276,5 @@ Yukarıdaki kod ölçülen mesafeyi önce medyan ve sonra anlık değer olmak ü
 Lütfen testleri uygun şekilde güncellediğinizden emin olun.  
   
 ## Lisans  
+[MIT](https://choosealicense.com/licenses/mit/)
 
