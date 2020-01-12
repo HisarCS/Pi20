@@ -215,7 +215,7 @@ Sürekli Dönme:
 import Pi20 
 from time import sleep
 
-servo = Pi20.ServoKontrol()  
+servo = Pi20.ServoKontrol(35)  
 servo.surekliDonmeyeAyarla()  
   
 aci = 0  
