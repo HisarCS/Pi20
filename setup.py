@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name = "Pi20",
-    version = "1.0",
+    version = "0.1",
     author = "Andy Emre Kocak, Rana Taki",
     author_email = "emre.kocak@hisarschool.k12.tr, rana.taki@hisarschool.k12.tr",
     description = "Library that makes use of sensors, motors, and servos in the PiWars Turkey robot kit by HisarCS",
