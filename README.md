@@ -66,8 +66,7 @@ Ana threadi yavaşlatmadan bir pencere açmak için  ``` __kareyiGostermeyiGunce
 
 - Örnek Kullanım
 
-```
-python
+```python
 from Pi20 import HizlandirilmisPiKamera
 from time import sleep
 
@@ -78,7 +77,6 @@ sleep(1)
 while True:
 	camera.kareyiGoster()
 ```
-
 Yukarıdaki örnek yeni bir HizlandirilmisPiKamera objesi oluşturur, ``` veriOkumayaBasla()```   fonksiyonu ile kameradan verileri almaya başlar ve while loop'un içinde de ``` kareyiGoster()```  fonksiyonu ile okunan verileri ekranda 'frame' isimli pencere oluşturup kameradan okunan ham verileri gösterir.
 
 Kamera objesi çağırılınca varsayılan çözünürlük 640x480 dir. Eğer başka bir çözünürlük istiyorsanız, örneğin 1280x720, kamera objesini bu şekilde oluşturabilirsiniz:
@@ -87,8 +85,7 @@ Kamera objesi çağırılınca varsayılan çözünürlük 640x480 dir. Eğer ba
 
 Eğer ki sonradan yaptığınız görüntü işleme adımlarınızı da ayrı pencerelerde göstermek istiyorsanız ```kareyiGoster()```  fonksiyonunu birkaç kez kullanarak kodunuzu yavaşlatmadan pencereleri ayrı bir thread'de çalıştırabilirsiniz. Bunun için aşağıdaki kodu referans alabilirsiniz.
 
-```
-python
+```python
 from Pi20 import HizlandirilmisPiKamera
 import imutils
 import cv2
@@ -111,46 +108,39 @@ Kumanda
 -
 - Metodlar
 
-```
-python
+```python
 __yenile__()
 ```
 Kumandadan alınan verileri bir while döngüsü içerisinde yeniler. Ana threadde çağırmak **tavsiye edilmez** çünkü program bu satırda takılacaktır.
 
-```
-python
+```python
 dinlemeyeBasla()
 ```
 ```__yenile__()``` metodunu ayrı bir thread üzerinde çağırarak ana thread'in kullanılabilmesini sağlar.
 
-```
-python
+```python
 solVerileriOku()
 ```
 Soldaki joystick değerlerini iki float değeri, x ve y, olarak verir.
 
-```
-python
+```python
 sagVerileriOku()
 ```
 Sağdaki joystick değerlerini iki float değeri, x ve y, olarak verir.
 
-```
-python
+```python
 butonlariOku()
 ```
 Basılan bütün düğmeleri sayı değeri olarak bir arrayde geri verir.
 
-```
-python
+```python
 verileriOku()
 ```
 Kumandanın bütün değerlerini tuple tipinde geri verir ```(python solVerileriOku(), python sagVerileriOku(), python butonlariOku())```
 
 - Örnek Kullanım
 
-```
-python
+```python
 import Pi20
 
 joystik = Pi20.Kumanda()
@@ -185,8 +175,7 @@ Motor hız değerlerini kumanda verisine dayanarak geri verir. x ve y, kumandan�
 
 - Örnek Kullanım
 
-```
-python
+```python
 import Pi20
 motorlar = Pi20.MotorKontrol()
 
@@ -197,8 +186,7 @@ Bu kod motorları başlatır ve ileri doğru tam hıza ayarlar.
 
 - Kumanda ile Örnek Kullanım
 
-```
-python
+```python
 import Pi20
 
 motorlar = Pi20.MotorKontrol()
@@ -218,15 +206,13 @@ ServoKontrol
 -
 - Metodlar
 
-```
-python
+```python
 surekliDonmeyeAyarla()
 tekDonmeyeAyarla()
 ```
 Servoyu sürekli dönme ve tek sefer dönmeye ayarlar. Sürekli dönme modu dinamik olarak değerler verilmesini gerektirirken tek dönme servoyu verilen açıya getirir ve sonrasında uykuya geçer.
 
-```
-python
+```python
 aciAyarla(aci)
 ```
 Servoyu derece cinsinden verilen açıya çevirir. Servo tek dönmeye ayarlıyken ayrı bir thread oluşturulur ve servo değeri istenen açıya gelince uyur.
@@ -234,8 +220,7 @@ Servoyu derece cinsinden verilen açıya çevirir. Servo tek dönmeye ayarlıyke
 - Örnek Kullanım
 
 Sürekli Dönme:
-```
-python
+```python
 import Pi20
 from time import sleep
 
@@ -258,8 +243,7 @@ while True:
 Bu durumda servo sürekli dönmeye ayarlıdır. Bir while döngüsü servonun açısını 1er 1er arttırır ve servoyu yeni açıya getirir.
 
 Tek Dönme:
-```
-python
+```python
 import Pi20
 from time import sleep
 
@@ -278,16 +262,14 @@ UltrasonikSensoru
 -
 - Metodlar
 
-```
-python
+```python
 mesafeOku()
 ```
 Ultrasonik sensörün ölçtüğü mesafeyi geri verir.
 
 - Örnek Kullanım
 
-```
-python
+```python
 import Pi20
 
 ultra = Pi20.UltrasonikSensoru(38, 40)
@@ -306,3 +288,4 @@ Lütfen testleri uygun şekilde güncellediğinizden emin olun.
 
 ## Lisans
 [MIT](https://choosealicense.com/licenses/mit/)
+
