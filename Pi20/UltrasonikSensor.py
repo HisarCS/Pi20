@@ -11,7 +11,7 @@ class UltrasonikSensor:
 
         self.sure = 0
 
-        self.ankikOlcum = 0
+        self.anlikOlcum = 0
 
         GPIO.setmode(setup)
 
