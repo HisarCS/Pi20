@@ -9,7 +9,7 @@ Pi20'yi indirmek için [pip](https://pip.pypa.io/en/stable/) paketleme yönetici
 
 
 ```
-$ sudo pip install Pi20
+$ sudo pip3 install Pi20
 ```
 
 Alternatif olarak Github'dan indirmek de mümkün.
