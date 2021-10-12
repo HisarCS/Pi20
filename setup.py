@@ -25,7 +25,7 @@ setup(
         'RPi.GPIO',
         'wiringpi',
         'numpy',
-        'opencv-contrib-python==3.4.3.18'
+        'opencv-contrib-python==4.2.0.32'
     ]
 
 )
